@@ -1,0 +1,24 @@
+# Configuration for GitLab
+gitlab:
+  # Base URL for GitLab, set as 'https://gitlab.xxx.com' here
+  # (Note: If you're using a self-hosted GitLab instance, provide the appropriate base URL. If you're using GitLab.com, you can omit this line.)
+  baseurl: https://gitlab.xxx.com
+  # Access token for GitLab, used for API request authentication.This token needs to have API permissions in GitLab.
+  token: xxxxxx
+# Configuration for the template
+template:
+  # Namespace for the template
+  namespace: template
+  extensions:
+    - .go
+    - .java
+    - .py
+    - .vue
+  base64_extensions:
+    - .png
+    - .jar
+    - .jpg
+    - .jks
+  files:
+    - Dockerfile
+    - Makefile
